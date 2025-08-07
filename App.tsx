@@ -1,11 +1,10 @@
 import React from 'react';
-import Header from './components/Header';
-import Hero from './components/Hero';
-import Services from './components/Services';
-import Pricing from './components/Pricing';
-import Gallery from './components/Gallery';
-import Reviews from './components/Reviews';
-import ContactFooter from './components/ContactFooter';
+import Header from './sections/Header';
+import Hero from './sections/Hero';
+import Pricing from './sections/Pricing';
+import Gallery from './sections/Gallery';
+import Reviews from './sections/Reviews';
+import ContactFooter from './sections/ContactFooter';
 
 import { Service, PriceCategory } from './types';
 

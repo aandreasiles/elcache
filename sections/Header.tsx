@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { WhatsAppIcon } from './icons';
+import { WhatsAppIcon } from '../components/icons';
 
 const WHATSAPP_NUMBER = "34608570360";
 const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}`;

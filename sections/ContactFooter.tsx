@@ -1,5 +1,5 @@
 import React from 'react';
-import { WhatsAppIcon, ClockIcon, MapPinIcon } from './icons';
+import { WhatsAppIcon, ClockIcon, MapPinIcon } from '../components/icons';
 
 const WHATSAPP_NUMBER = "34608570360";
 const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent("¡Hola! Me gustaría reservar una cita o pedir información.")}`;

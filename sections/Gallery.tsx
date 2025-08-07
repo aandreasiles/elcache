@@ -1,5 +1,5 @@
 import React from 'react';
-import ScrollAnimator from './ScrollAnimator';
+import ScrollAnimator from '../components/ScrollAnimator';
 
 const images = [
   { src: 'https://storage.googleapis.com/generative-ai-pro-docs-testing/original_images/c3b164f9-2b13-4c57-bc97-f58c4224976c.jpeg', alt: 'Vista general del salón de El Caché' },

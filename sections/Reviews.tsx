@@ -1,7 +1,7 @@
 import React from 'react';
 import { Review } from '../types';
-import { StarIcon } from './icons';
-import ScrollAnimator from './ScrollAnimator';
+import { StarIcon } from '../components/icons';
+import ScrollAnimator from '../components/ScrollAnimator';
 
 const mockReviews: Review[] = [
     {
