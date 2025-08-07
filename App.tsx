@@ -6,36 +6,19 @@ import Gallery from './sections/Gallery';
 import Reviews from './sections/Reviews';
 import ContactFooter from './sections/ContactFooter';
 
-import { Service, PriceCategory } from './types';
+
+import { useBarberData } from './hooks/useBarberData';
 
 const App: React.FC = () => {
-    const [services, setServices] = React.useState<Service[]>([]);
-    const [priceCategories, setPriceCategories] = React.useState<PriceCategory[]>([]);
 
-    React.useEffect(() => {
-        // Fetch services data
-        fetch('./data/services.json')
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error(`HTTP error! status: ${response.status}`);
-                }
-                return response.json();
-            })
-            .then(data => setServices(data))
-            .catch(error => console.error('Error fetching services.json:', error));
+    const { services, priceCategories, loading, error } = useBarberData();
 
-        // Fetch pricing data
-        fetch('./data/prices.json')
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error(`HTTP error! status: ${response.status}`);
-                }
-                return response.json();
-            })
-            .then(data => setPriceCategories(data))
-            .catch(error => console.error('Error fetching prices.json:', error));
-    }, []);
-
+    if (loading) {
+        return <div className="bg-black text-white antialiased flex items-center justify-center min-h-screen">Cargando...</div>;
+    }
+    if (error) {
+        return <div className="bg-black text-white antialiased flex items-center justify-center min-h-screen">Error: {error}</div>;
+    }
     return (
         <div className="bg-black text-white antialiased">
             <Header />
