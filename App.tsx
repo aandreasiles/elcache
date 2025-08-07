@@ -42,7 +42,6 @@ const App: React.FC = () => {
             <Header />
             <main>
                 <Hero />
-                <Services services={services} />
                 <Pricing priceCategories={priceCategories} />
                 <Gallery />
                 <Reviews />

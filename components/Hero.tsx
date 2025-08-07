@@ -30,7 +30,10 @@ const Hero: React.FC = () => {
     return (
         <section id="hero" className="min-h-screen flex flex-col items-center justify-center bg-black relative overflow-hidden">
             {/* Background Image */}
-            <div className="absolute inset-0 bg-cover bg-center opacity-40" style={{ backgroundImage: "url('https://storage.googleapis.com/generative-ai-pro-docs-testing/original_images/c3b164f9-2b13-4c57-bc97-f58c4224976c.jpeg')" }}></div>
+            <div
+                className="absolute inset-0 bg-cover bg-center opacity-40"
+                style={{ backgroundImage: "url('/data/portada-cache.webp')" }}
+            ></div>
             {/* Radial Gradient Overlay */}
             <div className="absolute inset-0 bg-radial-hero"></div>
             
