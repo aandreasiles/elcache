@@ -1,6 +1,6 @@
 import React from 'react';
 import { Service } from '../types';
-import ScrollAnimator from './ScrollAnimator';
+import ScrollAnimator from '../components/ScrollAnimator';
 
 interface ServicesProps {
     services: Service[];
