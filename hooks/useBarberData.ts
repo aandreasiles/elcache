@@ -17,13 +17,14 @@ export function useBarberData(): UseBarberDataResult {
   useEffect(() => {
     setLoading(true);
     setError(null);
+    const base = import.meta.env.BASE_URL || '/';
     Promise.all([
-      fetch('./data/services.json')
+      fetch(`${base}data/services.json`)
         .then(response => {
           if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
           return response.json();
         }),
-      fetch('./data/prices.json')
+      fetch(`${base}data/prices.json`)
         .then(response => {
           if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
           return response.json();
