@@ -1,5 +1,6 @@
 import React from 'react';
 import { WhatsAppIcon } from '../components/icons';
+import heroImage from '../public/portada-cache.webp';
 
 const WHATSAPP_NUMBER = "34608570360";
 const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent("¡Hola! Me gustaría reservar una cita.")}`;
@@ -32,7 +33,7 @@ const Hero: React.FC = () => {
             {/* Background Image */}
             <div
                 className="absolute inset-0 bg-cover bg-center opacity-40"
-                style={{ backgroundImage: "url('/elcache/portada-cache.webp')" }}
+                style={{ backgroundImage: `url(${heroImage})` }}
             ></div>
             {/* Radial Gradient Overlay */}
             <div className="absolute inset-0 bg-radial-hero"></div>
