@@ -32,7 +32,7 @@ const Hero: React.FC = () => {
             {/* Background Image */}
             <div
                 className="absolute inset-0 bg-cover bg-center opacity-40"
-                style={{ backgroundImage: "url('/portada-cache.webp')" }}
+                style={{ backgroundImage: "url('/elcache/portada-cache.webp')" }}
             ></div>
             {/* Radial Gradient Overlay */}
             <div className="absolute inset-0 bg-radial-hero"></div>
