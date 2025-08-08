@@ -1,6 +1,6 @@
 import React from 'react';
 import { WhatsAppIcon } from '../components/icons';
-import heroImage from '../public/portada-cache.webp';
+import heroImage from '../assets/portada-cache.webp';
 
 const WHATSAPP_NUMBER = "34608570360";
 const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent("¡Hola! Me gustaría reservar una cita.")}`;
