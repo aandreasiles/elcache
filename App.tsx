@@ -5,7 +5,7 @@ import Pricing from './sections/Pricing';
 import Gallery from './sections/Gallery';
 import Reviews from './sections/Reviews';
 import ContactFooter from './sections/ContactFooter';
-import pricingData from './data/prices.json';
+import pricingData from './public/prices.json';
 
 
 const App: React.FC = () => {
